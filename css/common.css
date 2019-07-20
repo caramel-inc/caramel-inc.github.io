@@ -13,30 +13,30 @@
   font-weight: bold;
 }
 
+
 /*** pc */
 
 body {
   text-align: center;
-  font-weight: normal;
   line-height: normal;
-  letter-spacing: normal;
 }
-header, main, footer, section, h1, h2, h3 {
-  margin: 0;
-  padding: 0;
+header, main, footer, section  {
+  min-width: 1024px;
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-position: center top;
+}
+header, main, footer, section, h1, h2, h3, figure, p {
+  margin: 0;
+  padding: 0;
 }
 .container {
   position: relative;
   max-width: 1024px;
   margin: auto;
 }
-figure, p {
-  margin: 0;
-}
 img {
+  width: 100%;
   object-fit: contain;
 }
 
@@ -235,7 +235,7 @@ main p {
 }
 .officer {
   position: absolute;
-  width: 228px;
+  width: 220px;
   height: 458px;
   top: 490px;
 }
@@ -307,11 +307,163 @@ footer p {
 
 
 /*** sp */
+@media screen and (max-width: 900px) {
 
-/* header */
+  header, main, footer, section  {
+    min-width: 375px;
+  }
+  .container {
+    max-width: 375px;
+  }
 
-/* service */
+  /* main */
+  main {
+    height: 1146px;
+  }
+  .logo {
+    left: 128px;
+    top: 32px;
+  }
+  main h1 {
+    left: 35px;
+    top: 196px;
+    font-family: URWDIN-Demi;
+    font-size: 64px;
+  }
+  main p {
+    left: 39px;
+    top: 428px;
+  }
+  .key_visual {
+    left: 38px;
+    top: 616px;
+    width: 300px;
+    height: 561px;
+  }
 
-/* team */
+  /* service */
+  .service h2 {
+    left: 70px;
+    top: 64px;
+  }
+  .service h3, .service p {
+    left: 28px;
+  }
+  .serv_img {
+    width: 180px;
+    height: 180px;
+  }
+  .submarine {
+    left: 270px;
+    top: 1471px;
+    width: 73px;
+    height: 50px;
+  }
 
-/* footer */
+  /* serv_sc */
+  .serv_sc {
+    height: 708px;
+  }
+  .serv_sc h3 {
+    top: 444px;
+  }
+  .serv_sc p {
+    top: 556px;
+  }
+  .serv_sc .serv_img {
+    left: 98px;
+    top: 232px;
+  }
+  .serv_sc .serv_bubble {
+    left: 290px;
+    top: 232px;
+    width: 39px;
+    height: 56px;
+  }
+
+  /* serv_mc */
+  .serv_mc {
+    height: 538px;
+  }
+  .serv_mc h3 {
+    top: 274px;
+  }
+  .serv_mc p {
+    top: 386px;
+  }
+  .serv_mc .serv_img {
+    left: 98px;
+    top: 63px;
+  }
+  .serv_mc .serv_bubble {
+    left: 57px;
+    top: 62px;
+    width: 25px;
+    height: 53px;
+  }
+
+  /* serv_nb */
+  .serv_nb {
+    height: 494px;
+  }
+  .serv_nb h3 {
+    top: 274px;
+  }
+  .serv_nb p {
+    top: 332px;
+  }
+  .serv_nb .serv_img {
+    left: 98px;
+    top: 62px;
+  }
+  .serv_nb .serv_bubble {
+    left: 294px;
+    top: 62px;
+    width: 29px;
+    height: 59px;
+  }
+
+
+  /* team */
+  .team {
+    height: 1990px;
+  }
+  .team h2 {
+    left: 62px;
+    top: 170px;
+  }
+  .airplane {
+    left: 75px;
+    top: 1383px;
+  }
+  .cloud {
+    left: 96px;
+    top: 819px;
+  }
+  .officer.ceo {
+    top: 329px;
+    left: 78px;
+  }
+  .officer.coo {
+    top: 893px;
+    left: 78px;
+  }
+  .officer.cco {
+    top: 1500px;
+    left: 78px;
+  }
+
+  /* footer */
+  footer {
+    height: 306px;
+    background-color: #e44b00;
+    background-position: center 0;
+  }
+  footer p {
+    position: absolute;
+    left: 77px;
+    top: 170px;
+  }
+
+
+}
