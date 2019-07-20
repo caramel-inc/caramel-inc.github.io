@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'URWDIN-Demi';
+  src: url('../font/URWDIN-Demi.otf');
+}
+@font-face {
+  font-family: 'GenJyuuGothicL-Monospace';
+  src: url('../font/GenJyuuGothicL-Monospace-Normal.ttf');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'GenJyuuGothicL-Monospace';
+  src: url('../font/GenJyuuGothicL-Monospace-Bold.ttf');
+  font-weight: bold;
+}
+
+/*** pc */
+
+body {
+  text-align: center;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+header, main, footer, section, h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+.container {
+  position: relative;
+  max-width: 1024px;
+  margin: auto;
+}
+figure, p {
+  margin: 0;
+}
+img {
+  object-fit: contain;
+}
+
+/* main */
+main {
+  height: 1184px;
+  text-align: left;
+  color: #000000;
+}
+.logo {
+  position: absolute;
+  left: 48px;
+  top: 48px;
+  width: 120px;
+  height: 140px;
+}
+main h1 {
+  position: absolute;
+  left: 66px;
+  top: 240px;
+  width: 305px;
+  height: 216px;
+  font-family: URWDIN-Demi;
+  font-size: 64px;
+}
+main p {
+  position: absolute;
+  left: 70px;
+  top: 472px;
+  width: 311px;
+  height: 180px;
+  font-family: GenJyuuGothicL-Monospace;
+  font-size: 12px;
+  line-height: 3;
+  letter-spacing: 2.1px;
+}
+.key_visual {
+  position: absolute;
+  left: 360px;
+  top: 128px;
+  width: 600px;
+  height: 1124px;
+}
+
+/* service */
+.service {
+  font-family: GenJyuuGothicL-Monospace;
+  text-align: left;
+  color: #ffffff;
+}
+.service h2 {
+  position: absolute;
+  left: 134px;
+  top: -24px;
+  width: 256px;
+  height: 136px;
+}
+.service h3 {
+  position: absolute;
+  width: 264px;
+  height: 88px;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.service p {
+  position: absolute;
+  width: 320px;
+  height: 120px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.71;
+  letter-spacing: 2px;
+}
+.serv_img {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+}
+.serv_bubble {
+  position: absolute;
+}
+.submarine {
+  position: absolute;
+  left: 416px;
+  top: 920px;
+  width: 146px;
+  height: 100px;
+}
+
+/* serv_sc */
+.serv_sc {
+  height: 480px;
+  background-color: #f7ab00;
+  background-image: url(../img/wave-01@2x.png);
+}
+.serv_sc h3 {
+  left: 184px;
+  top: 176px;
+}
+.serv_sc p {
+  left: 184px;
+  top: 288px;
+}
+.serv_sc .serv_img {
+  left: 612px;
+  top: 160px;
+}
+.serv_sc .serv_bubble {
+  left: 872px;
+  top: 79px;
+  width: 78px;
+  height: 112px;
+}
+
+/* serv_mc */
+.serv_mc {
+  height: 460px;
+  background-color: #f48e00;
+  background-image: url(../img/wave-02@2x.png);
+}
+.serv_mc h3 {
+  left: 512px;
+  top: 136px;
+}
+.serv_mc p {
+  left: 512px;
+  top: 248px;
+}
+.serv_mc .serv_img {
+  left: 152px;
+  top: 120px;
+}
+.serv_mc .serv_bubble {
+  left: 86px;
+  top: 80px;
+  width: 50px;
+  height: 106px;
+}
+
+/* serv_nb */
+.serv_nb {
+  height: 380px;
+  background-color: #ef7a00;
+  background-image: url(../img/wave-03@2x.png);
+}
+.serv_nb h3 {
+  left: 184px;
+  top: 136px;
+  width: 198px;
+  height: 44px;
+}
+.serv_nb p {
+  left: 184px;
+  top: 204px;
+}
+.serv_nb .serv_img {
+  left: 636px;
+  top: 120px;
+}
+.serv_nb .serv_bubble {
+  left: 912px;
+  top: 96px;
+  width: 58px;
+  height: 118px;
+}
+
+
+/* team */
+.team {
+  height: 980px;
+  background-color: #fff9b0;
+  background-image: url(../img/wave-04@2x.png);
+  font-family: GenJyuuGothicL-Monospace;
+}
+.team h2 {
+  position: absolute;
+  left: 180px;
+  top: 291px;
+  width: 251px;
+  height: 127px;
+}
+.airplane {
+  position: absolute;
+  left: 759px;
+  top: 293px;
+  width: 227px;
+  height: 85px;
+}
+.cloud {
+  position: absolute;
+  left: 451px;
+  top: 996px;
+  width: 183px;
+  height: 42px;
+}
+.officer {
+  position: absolute;
+  width: 228px;
+  height: 458px;
+  top: 490px;
+}
+.officer.ceo {
+  left: 118px;
+}
+.officer.coo {
+  left: 402px;
+}
+.officer.cco {
+  left: 686px;
+}
+.officer .prof {
+  position: absolute;
+  width: 160px;
+  height: 160px;
+  top: 0;
+  left: 30px;
+}
+.officer .fullname {
+  position: absolute;
+  width: 100%;
+  top: 184px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #231815;
+}
+.officer .role {
+  position: absolute;
+  width: 100%;
+  top: 220px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #00a0e9;
+}
+.officer .bio {
+  position: absolute;
+  width: 100%;
+  top: 263px;
+  text-align: left;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: #000000;
+}
+
+/* footer */
+footer {
+  height: 400px;
+  background-color: #fff9b0;
+  background-image: url(../img/footer@2x.png);
+  background-position: center bottom;
+  text-align: left;
+  color: #ffffff;
+}
+footer p {
+  position: absolute;
+  left: 739px;
+  top: 210px;
+  width: 222px;
+  height: 96px;
+  font-family: GenJyuuGothicL-Monospace;
+  font-size: 12px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2;
+  letter-spacing: 1px;
+}
+
+
+/*** sp */
+
+/* header */
+
+/* service */
+
+/* team */
+
+/* footer */
