@@ -39,6 +39,29 @@ img {
   width: 100%;
   object-fit: contain;
 }
+.wave {
+  position: absolute;
+  background-size: 100px 100%;
+  background-position: 0 bottom;
+  background-repeat: repeat-x;
+  transform-origin: 50% 100%;
+  transform: scaleY(1.55);
+}
+.active {
+  animation: wave-animation 2s 1 linear;
+  background-position: 100px bottom;
+  transform: scaleY(0);
+}
+@keyframes wave-animation{
+  from {
+    background-position: 0 bottom;
+    transform: scaleY(1.55)
+  };
+  to {
+    background-position: 100px bottom;
+    transform: scaleY(0)
+  };
+}
 
 /* main */
 main {
@@ -78,7 +101,14 @@ main p {
   left: 360px;
   top: 128px;
   width: 600px;
-  height: 1124px;
+  height: 1200px;
+}
+main .wave {
+  left: 66px;
+  top: 240px;
+  width: 305px;
+  height: 216px;
+  background-image: url('../img/anim-wave-01.png');
 }
 
 /* service */
@@ -151,6 +181,13 @@ main p {
   width: 78px;
   height: 112px;
 }
+.serv_sc .wave {
+  left: 184px;
+  top: 176px;
+  width: 320px;
+  height: 272px;
+  background-image: url('../img/anim-wave-02.png');
+}
 
 /* serv_mc */
 .serv_mc {
@@ -175,6 +212,13 @@ main p {
   top: 80px;
   width: 50px;
   height: 106px;
+}
+.serv_mc .wave {
+  left: 512px;
+  top: 136px;
+  width: 320px;
+  height: 272px;
+  background-image: url('../img/anim-wave-03.png');
 }
 
 /* serv_nb */
@@ -202,6 +246,13 @@ main p {
   top: 96px;
   width: 58px;
   height: 118px;
+}
+.serv_nb .wave {
+  left: 184px;
+  top: 136px;
+  width: 320px;
+  height: 188px;
+  background-image: url('../img/anim-wave-04.png');
 }
 
 
@@ -338,7 +389,11 @@ footer p {
     left: 38px;
     top: 616px;
     width: 300px;
-    height: 561px;
+    height: 600px;
+  }
+  main .wave {
+    left: 35px;
+    top: 196px;
   }
 
   /* service */
@@ -358,11 +413,16 @@ footer p {
     top: 1471px;
     width: 73px;
     height: 50px;
+    z-index: 1;
+  }
+  .service .wave {
+    left: 28px;
   }
 
   /* serv_sc */
   .serv_sc {
     height: 708px;
+    background-image: url(../img/wave-01.png);
   }
   .serv_sc h3 {
     top: 444px;
@@ -380,10 +440,14 @@ footer p {
     width: 39px;
     height: 56px;
   }
+  .serv_sc .wave {
+    top: 444px;
+  }
 
   /* serv_mc */
   .serv_mc {
     height: 538px;
+    background-image: url(../img/wave-02.png);
   }
   .serv_mc h3 {
     top: 274px;
@@ -401,10 +465,14 @@ footer p {
     width: 25px;
     height: 53px;
   }
+  .serv_mc .wave {
+    top: 274px;
+  }
 
   /* serv_nb */
   .serv_nb {
     height: 494px;
+    background-image: url(../img/wave-03.png);
   }
   .serv_nb h3 {
     top: 274px;
@@ -422,11 +490,15 @@ footer p {
     width: 29px;
     height: 59px;
   }
+  .serv_nb .wave {
+    top: 274px;
+  }
 
 
   /* team */
   .team {
     height: 1990px;
+    background-image: url(../img/wave-04.png);
   }
   .team h2 {
     left: 62px;
@@ -458,6 +530,7 @@ footer p {
     height: 306px;
     background-color: #e44b00;
     background-position: center 0;
+    background-image: url(../img/footer.png);
   }
   footer p {
     position: absolute;

@@ -38,6 +38,8 @@
 
     gtag('config', 'UA-144242371-1');
   </script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" type="text/javascript"></script>
+  <script src="js/jquery.inview.min.js" type="text/javascript"></script>
 </head>
 <body>
   <main>
@@ -51,7 +53,8 @@
       -->人やモノを有機的に絡め、我々の熱量を持って<br /><!--
       -->世の中に化学反応を起こす会社でありたい<br /><!--
       -->と考えています。</p>
-      <img class="key_visual" src="img/kv.png" srcset="img/kv@2x.png 2x, img/kv@3x.png 3x" />
+      <img class="key_visual" src="img/kv.png" srcset="img/kv@2x.png 2x" />
+      <div class="wave"></div>
     </div>
   </main>
   <section class="service">
@@ -64,6 +67,7 @@
         <h3>サービス<br /><!--
         --->コンサルティング</h3>
         <p>サービス開発、デザイン、運用領域に至るまで、パートナーに対して包括的なコンサルティング事業を展開。各領域において、業界のスペシャリストによるソリューションを提供します。</p>
+        <div class="wave"></div>
         <img class="serv_img" src="img/service-01.png" srcset="img/service-01@2x.png 2x, img/service-01@3x.png 3x" />
         <img class="serv_bubble" src="img/bubble-01.png" srcset="img/bubble-01@2x.png 2x, img/bubble-01@3x.png 3x" />
       </div>
@@ -73,6 +77,7 @@
         <h3>マーケティング<br /><!--
         --->コンサルティング</h3>
         <p>日々環境が変化するプロモーション、マーケティング領域において、ハンズオンでの事業支援を実施。広告運用はもとより、インハウスやニアショアといった組織コンサルも提供します。</p>
+        <div class="wave"></div>
         <img class="serv_img" src="img/service-02.png" srcset="img/service-02@2x.png 2x, img/service-02@3x.png 3x" />
         <img class="serv_bubble" src="img/bubble-02.png" srcset="img/bubble-02@2x.png 2x, img/bubble-02@3x.png 3x" />
       </div>
@@ -81,9 +86,9 @@
       <div class="container">
         <h3>新規事業開発</h3>
         <p>toB、toC両側面において、課題解決型の自社プロダクト開発を進行中。ユーザー体験を重視し、認知、購入、消費、共有といった一連のタッチポイントで感動が生まれる体験を提供します。</p>
+        <div class="wave"></div>
         <img class="serv_img" src="img/service-03.png" srcset="img/service-03@2x.png 2x, img/service-03@3x.png 3x" />
         <img class="serv_bubble" src="img/bubble-03.png" srcset="img/bubble-03@2x.png 2x, img/bubble-03@3x.png 3x" />
-      </div>
       </div>
     </section>
   </section>
@@ -120,5 +125,8 @@
       -->info@caramel-inc.com</p>
     </div>
   </footer>
+  <script>
+    $('.wave').on('inview', function() { $(this).addClass("active"); });
+  </script>
 </body>
 </html>
