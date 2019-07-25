@@ -4,12 +4,12 @@
 }
 @font-face {
   font-family: 'GenJyuuGothicL-Monospace';
-  src: url('../font/GenJyuuGothicL-Monospace-Normal.ttf');
+  src: url('../font/GenJyuuGothicL-Monospace-Normal.woff2') format('woff2');
   font-weight: normal;
 }
 @font-face {
   font-family: 'GenJyuuGothicL-Monospace';
-  src: url('../font/GenJyuuGothicL-Monospace-Bold.ttf');
+  src: url('../font/GenJyuuGothicL-Monospace-Bold.woff2') format('woff2');
   font-weight: bold;
 }
 
