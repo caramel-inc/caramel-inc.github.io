@@ -21,6 +21,7 @@
   <link rel="apple-touch-icon" href="img/icon/152x152.png" sizes="152x152" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/common.css" />
+  <link rel="manifest" href="./manifest.json" />
   <script>
     //<![CDATA[
     if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
@@ -137,6 +138,9 @@
   </footer>
   <script>
     $('.wave').on('inview', function() { $(this).addClass("active"); });
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('js/service_worker.js')
+    }
   </script>
 </body>
 </html>
