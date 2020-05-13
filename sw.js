@@ -1,0 +1,1 @@
+importScripts('https://cdn.cr-eam.com/js/cream-service-worker.js');

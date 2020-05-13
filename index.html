@@ -21,7 +21,6 @@
   <link rel="apple-touch-icon" href="img/icon/app_152x152.png" sizes="152x152" />
   <link rel="stylesheet" href="css/normalize.css" />
   <link rel="stylesheet" href="css/common.css" />
-  <link rel="manifest" href="./manifest.json" />
   <script>
     //<![CDATA[
     if ((navigator.userAgent.indexOf('iPhone') > 0) || navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) {
@@ -64,7 +63,7 @@
       -->人やモノを有機的に絡め、我々の熱量を持って<br /><!--
       -->世の中に化学反応を起こす会社でありたい<br /><!--
       -->と考えています。</p>
-      <img class="key_visual" src="img/kv.png" srcset="img/kv@2x.png 2x" />
+      <img class="key_visual" src="img/kv.png" />
       <div class="wave"></div>
     </div>
   </main>
@@ -138,9 +137,8 @@
   </footer>
   <script>
     $('.wave').on('inview', function() { $(this).addClass("active"); });
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('js/service_worker.js')
-    }
   </script>
+  <!-- CREaM SDK -->
+  <script src="https://cdn.cr-eam.com/js/push.js" charset="utf-8" data-cid="5634161670881280" data-pid="5644004762845184"></script>
 </body>
 </html>
